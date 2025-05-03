@@ -1,4 +1,4 @@
-# LLM & RAG Demo with LangChain and LLAMA2
+# LLM & RAG Demo with LangChain and Llama 3.2
 
 This repository contains a quick demonstration of Large Language Models (LLMs) and Retrieval Augmented Generation (RAG) using Python and LangChain. The project includes two different implementations showcasing basic LLM integration and RAG capabilities.
 
@@ -17,13 +17,13 @@ This repository contains a quick demonstration of Large Language Models (LLMs) a
 This implementation demonstrates a basic chat interface using:
 - Streamlit for the web interface
 - LangChain for LLM orchestration
-- Ollama for local LLM inference using LLAMA2
+- Ollama for local LLM inference using Llama 3.2
 - Environment variable configuration for LangChain tracing
 
 Key features:
 - Simple chat prompt template
 - Web-based user interface
-- Integration with local LLAMA2 model via Ollama
+- Integration with local Llama 3.2 model via Ollama
 - Structured output parsing
 
 ### 2. RAG Implementation (`2.py`)
@@ -42,7 +42,7 @@ Technical components:
 - Text Splitting: `RecursiveCharacterTextSplitter`
 - Embeddings: `HuggingFaceEmbeddings` (using "sentence-transformers/all-MiniLM-L6-v2")
 - Vector Store: `FAISS`
-- LLM: Ollama (LLAMA2)
+- LLM: Ollama (Llama 3.2)
 - Chain Type: RetrievalQA with "stuff" strategy
 
 ## Prerequisites
@@ -79,7 +79,7 @@ Make sure you have a PDF file named "speech.pdf" in the same directory when runn
 - Top-k retrieval: 4 chunks per query
 
 ### Model Configuration
-- LLM: LLAMA2 (via Ollama)
+- LLM: Llama 3.2 (via Ollama)
 - Embedding Model: all-MiniLM-L6-v2
 - Default Ollama endpoint: http://localhost:11434
 
